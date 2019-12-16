@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- On définit l'encodage du fichier -->
+		<meta charset="utf-8" />
+		<!-- On applique le style css à la page -->
+		<link rel="stylesheet" href="global_style.css" />
+		<!-- On affiche un icone dans l'onglet du navigateur -->
+		<link rel="icon" type="image/png" href="logo_scorpion.jpg" />
+		<!-- On applique le titre-->
+		<title>Scorpion (série) - NDA ISN - Exercice de synthèse</title>
+	</head>
+	<body>
+		<header id="haut">
+			<!-- Affichage de l'en-tête (titre principal Scorpion) -->
+			<img src="image_fond.jpg" class="imgcenter" alt="Image de l'équipe Scorpion" />
+			<h1 class="textcentered">&lt;/<span class="color_red">Scorpion</span>&gt;</h1>
+		</header>
+		<!-- Menu latéral de navigation-->
+		<nav>
+			<strong>
+			<h2>Sommaire:</h2>
+				<!-- Ancres des différents paragraphes-->
+				<p>Cliquez pour aller directement au paragraphe correspondant:</p>
+				<ol>
+					<li><a href="#Brien">Walter O'Brien</a></li>
+					<li><a href="#Dineen">Paige Dineen</a></li>
+					<li><a href="#Curtis">Toby Curtis</a></li>
+					<li><a href="#Dodd">Sylvester Dodd</a></li>
+					<li><a href="#Quinn">Happy Quinn</a></li>
+				</ol>
+			<h2>Pages:</h2>
+				<ol>
+					<li><a href="principale.html">Principale</a></li>
+					<li><a href="personnages.html" id="current_page">Personnages et acteurs</a></li>
+					<li><a href="dates_et_chiffres.html">Dates et chiffres importants</a></li>
+				</ol>				
+			</strong>
+			<!-- Bouton fixe de retour en haut de page-->
+			<a href="#haut" class="haut_page"><img src="icone_haut_de_page.png" class="imgcenter"
+			alt="Retour en haut de page" title="Cliquez pour revenir en haut de la page" /><br/>Haut de page<br/></a></br></br>
+		</nav>
+		<div class="corps_page">
+			<div class="page_title">
+				<h1>&lt;/<span class="color_red">Personnages et acteurs</span>&gt;</h1>
+				<!-- Création d'une "map" pour pouvoir cliquer sur les personnages-->
+				<map name="personnages">
+					<area shape="rect" alt="Walter O'Brien" coords="350,0,580,390" href="#Brien">
+					<area shape="rect" alt="Paige Dineen" coords="580,0,740,390" href="#Dineen">
+					<area shape="rect" alt="Toby Curtis" coords="240,0,350,390" href="#Curtis">
+					<area shape="poly" alt="Happy Quinn" coords="140,0,128,144,60,370,240,390,240,0" href="#Quinn">
+					<area shape="poly" alt="Sylvester Dodd" coords="0,0,0,377,60,377,124,144,104,0" href="#Dodd">
+				</map>
+				<!-- Application de la map sur l'image -->
+				<br/><img src="acteurs.jpg" usemap="#personnages" alt="Photo des personnages principaux de la série" />
+				<br/><p>Cliquez sur les personnages pour en savoir plus!</p>
+			</div>
+			<h2 id="Brien">Walter O'Brien</h2>
+			<figure class="imgfloat">
+				<img src="Elyes_Gabel.jpg" alt="Photo de Elyes Gabel" />
+				<figcaption>Photo de Elyes Gabel</figcaption>
+			</figure>
+			<p>
+				<h3>Personnage</h3>
+				Walter O'Brien est le <em>personnage principal</em> de la série. Il est le fondateur de la société Scorpion réunissant quatre génies.
+				Il est la quatrième personne la plus intelligente au monde avec un QI de 197. Il dirige l'équipe.
+				C'est souvent lui qui prend les initiatives, donne les ordes.
+				Il est <em>expert en informatique</em>.
+				<h4>Enfance</h4>
+				En 1993, Walter a piraté les serveurs de la NASA afin de télécharger les plans de la navette spatiale pour les
+				accrocher sur le mur de sa chambre. Il utilisait alors le pseudo de Scorpion.
+				L'agent Cabe Gallo l'a interrogé pendant trois jours pour savoir comment avait fait cet enfant.
+				Cabe est ensuite devenu un second père pour Walter, alors qu'ils restent en contact.
+				<h3 class="clearfloatimg">Acteur</h3>
+				Walter est joué par <em>Elyes Cherif Gabel</em>, un acteur britannique né en 1983 à Londres.
+				Il rencontre Katharine McPhee (Paige) sur le tournage de Sorpion.
+				Alors que dans la série, ils semblent incompatibles malgré leur attirance, dans la vie réelle, ils vivent une relation pendant 2 ans.
+			</p>
+			<h2 id="Dineen">Paige Dineen</h2>
+			<figure class="imgfloat">
+				<img src="Katharine_McPhee.jpg" alt="Photo de Katharine McPhee" />
+				<figcaption>Photo de <br/>Katharine McPhee</figcaption>
+			</figure>
+			<p>
+				<h3>Personnage</h3>
+				<em>Paige Dineen était une serveuse</em> lorsqu'elle rencontra l'équipe de Scorpion.
+				Elle est embauchée par Walter O'Brien afin de <em>faire le lien entre les génies et le monde</em>,
+				en échange ils l'aident à comprendre son fils Ralph.
+				Paige Dineen élève seule son fils Ralph qui est lui aussi un surdoué.
+				Elle ne s'en rend compte que grâce à Walter dans l'épisode 1, lorsque Ralph bat en 8 coups seulement Sylvester
+				à une partie d'échecs.
+				<h3>Acteur</h3>
+				Le personnage de Paige est joué par <em>Katharine McPhee</em>, une actrice et vedette américaine née en 1984 à Los Angeles.
+				Elle tente également une percée musicale entre 2006 et 2011.
+			</p>
+			<h2 id="Curtis" class="clearfloatimg">Toby Curtis</h2>
+			<figure class="imgfloat">
+				<img src="Eddie_Kaye_Thomas.jpg" alt="Photo de Eddie Kaye Thomas" />
+				<figcaption>Photo de <br/>Eddie Kaye Thomas</figcaption>
+			</figure>
+			<p>
+				<h3>Personnage</h3>
+				Tobias Merryweather Curtis, souvent appelé Toby, est <em>un comportementaliste</em> ainsi
+				qu'un psychiatre de renommée internationale diplômé d'Harvard.
+				Son rôle est de déceler le comportement humain et jouer sur la manipulation mentale.
+				Il doit parvenir à prédire et, dans certains cas, à <em>contrôler les comportements</em>.
+				Il est aussi un médecin et chirurgien hors pair et a sauvé plusieurs vies en réussissant
+				des opérations d'urgence qualifiées de surhumaines et de hors-normes.
+				<h3>Acteur</h3>
+				Toby est joué par <em>Eddie Kaye Thomas</em>, un acteur américain né en 1980 à New York.
+			</p>
+			<h2 id="Dodd" class="clearfloatimg">Sylvester Dodd</h2>
+			<figure class="imgfloat">
+				<img src="Ari_Stidham.jpg" alt="Photo de Ari Stidham" />
+				<figcaption>Photo de Ari Stidham</figcaption>
+			</figure>
+			<p>
+				<h3>Personnage</h3>
+				Sylvester est le vrai <em>génie des chiffres, le statisticien</em> de l'équipe.
+				Il tient une place assez importante dans l'équipe "Scorpion" car il arrive à bout de toutes les équations et statistiques
+				en quelques secondes.
+				Le geek de l'équipe est constamment angoissé au point d'être agoraphobe, claustrophobe.
+				Il est souvent qualifié de <em>"calculatrice humaine"</em>.
+				<h3>Acteur</h3>
+				<em>Ari Stidham</em>, né en 1992 à Westlake Village en Californie, est un acteur, chanteur et compositeur américain.
+				Il joue le rôle de Sylvester, qui est son dernier rôle en tant qu'acteur.
+			</p>
+			<h2 id="Quinn" class="clearfloatimg">Happy Quinn</h2>
+			<figure class="imgfloat">
+				<img src="Jadyn_Wong.jpg" alt="Photo de Jadyn Wong" />
+				<figcaption>Photo de Jadyn Wong</figcaption>
+			</figure>
+			<p>
+				<h3>Personnage</h3>
+				<em>Happy Quinn est un génie de la mécanique</em>. Elle est capable de <em>réparer n'importe quel objet</em>
+				rapidement avec très peu de matériel.
+				Elle ne supporte pas l'autorité et les critiques. Si quelqu'un dit ou fait quelque chose de déplacé, 
+				elle devient violente physiquement. Elle est également souvent de mauvaise humeur mais apporte une vraie aide à l'équipe.<br/>
+				Elle était mariée avec Walter pour permettre à ce dernier d'obtenir son visa américain.
+				Ils ont divorcé afin qu'elle puisse se marier à Toby.
+				<h3>Acteur</h3>
+				<em>Jadyn Wong</em>, née en 1985 à Medicine Hat, Alberta, est une actrice canadienne.
+				Elle incarne le rôle de Happy dans Scorpion. 
+				Elle est également ceinture noire de karaté et pianiste classique.
+			</p>
+			<h2 class="clearfloatimg"><a href="principale.html" title="Retour à la page principale">Page principale</a></h2>
+			<hr>
+			<footer> <!-- Bas de page (crédits) -->
+				<h2>Crédits</h2>
+				<p>Page écrite et mise en page par <a href="https://github.com/antoinech2" target="_black" title="Redirection: Page GitHub">
+				Antoine Cheucle</a></p>
+				<a href="https://www.nda41.fr/" target="_black" title="Redirection: Lycée Notre-Dame des Aydes"><img src="logo_nda.png" 
+				alt="Logo du lycée Notre-Dame des Aydes" /></a>
+				<p>Exercice de Synthèse<br/>Spécialité ISN 2019-2020</p>
+			</footer>
+		</div>
+	</body>
+</html>

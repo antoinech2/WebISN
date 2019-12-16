@@ -1,0 +1,284 @@
+/*
+	Importation des polices locales, libres de droit
+*/
+@font-face
+{
+	font-family: "Quicksand";
+	src: url("Quicksand-Regular.otf") format("truetype");
+}
+@font-face
+{
+	font-family: "Glegoo";
+	src: url("Glegoo-Regular.ttf") format("truetype");
+}
+@font-face
+{
+	font-family: "Summit";
+	src: url("SummitRegular-Display.ttf") format("truetype");
+}
+@font-face
+{
+	font-family: "Wallpoet";
+	src: url("Wallpoet-Regular.ttf") format("truetype");
+}
+
+/*
+	Mise en page des zones spéciales
+*/
+
+.corps_page /* Représente l'ensemble des informations de la page sans le menu de navigation, l'en-tête et le base de page*/
+{
+	margin-left:320px; /*Décalage de l'affichage pour laisser de la place pour le menu de navigation*/
+}
+.corps_page p, ul, ol
+{
+	font-size: 1.2em;
+}
+.haut_page  /*Représente le bouton "haut de page"*/
+{
+	font-family: "Wallpoet", Arial, serif;
+	position: fixed;
+	bottom: 20px;
+	right:30px;
+}
+footer /*Représente le bas de page (crédits)*/
+{
+	font-family: "Glegoo", Arial, serif;
+	text-align: center;
+	color: #00478C;
+	font-size: 0.8em;
+}
+.video /*Représente l'incurstation de la vidéo YouTube*/
+{
+	float:right;
+	margin: 10px;
+
+}
+
+/*
+	Mise en forme des titres
+*/
+
+h1
+{
+	font-size: 4em;
+	text-align: center;
+	color: white;
+	font-family: "Summit", Arial, serif;
+	font-weight: normal;
+	text-shadow: 10px 10px 2px black;
+}
+h2, h3
+{
+	font-family: "Quicksand", Arial, serif;
+	text-decoration: underline;
+}
+h2
+{
+	font-size: 2em;
+	color: rgb(29,0,255);
+}
+h3
+{
+	font-size: 1.5em;
+	color: #00abff;
+}
+header /*Représente le haut de la page : Titre principal (image + texte Scorpion)*/
+{
+	position: relative;
+	text-align: center;
+	background-color: #423d39;
+}
+.page_title /*Représente le titre de la page (en dessous du titre principal*/
+{
+	background-color: rgba(65, 65, 65, 0.5);
+}
+.page_title p
+{
+	color: #009F6A;
+	text-align: center;
+	font-size: 3em;
+	font-family: "Quicksand", Arial, serif;
+}
+.page_title img
+{
+	margin-left: 5%;
+}
+
+/*
+	Mise en forme des légendes d'images
+*/
+
+figcaption /*Représente les légendes des images*/
+{
+	font-family: "Glegoo", Arial, serif;
+	font-style: italic;
+	text-align: center;
+}
+
+/*
+	Mise en forme des liens
+*/
+
+a
+{
+	color: #993333;
+}
+a:hover /*Lien survolé*/
+{
+	text-decoration: underline;
+	font-style: italic;
+	color: #663333;
+}
+a:active /*Lien cliqué*/
+{
+	text-decoration: underline;
+	font-style: italic;
+	color: #000000;
+	font-weight: bold;
+	background-color: #FFCC66;
+}
+a:visited /*Lien visité*/
+{
+	color: #660066;
+}
+
+/*
+	Mise en forme des images
+*/
+
+.imgfloat /*Mettre une image flottante*/
+{
+	float:left;
+	margin: 10px;
+}
+.imgcenter /*Centrer une image*/
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.clearfloatimg /*Arrêter le flottement*/
+{
+	clear:left;
+}
+.corps_page img /*Ombre et bordures des images*/
+{
+	box-shadow: 8px 8px 4px gray;
+	border: 2px dashed gray;
+	border-radius: 30px / 30px;
+}
+
+
+/*
+	Mise en forme du texte
+*/
+
+.textcentered  /*Texte du titre principal*/
+{
+	position: absolute; /*Position absolue*/
+	top: 35%; /*Coordonnées du titre*/
+	left: 50%;
+	transform: translate(-50%, -50%); /*Recentrage du titre (on applique les coordonnées au centre du titre, et non plus en haut à gauche*/
+}
+.color_red /*Couleur rouge*/
+{
+	color: #c74029;
+}
+em /*Mise en valeurs des mots importants*/
+{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #006831;
+	font-style: normal;
+}
+.italique /*Mise en italique*/
+{
+	font-style: italic;
+}
+.small /*Texte en petit (en dessous des sources)*/
+{
+	font-size: 0.8em;
+}
+/*
+
+	Mise en page relative au sommaire latéral
+
+*/
+
+nav /*Représente le menu de navigation latéral*/
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #463737;
+	height: 100%;
+	width: 300px;
+	overflow: auto;
+	padding-left: 8px;
+	color: white;
+	font-family: "Quicksand", Arial, serif;
+}
+nav ol
+{
+	list-style-type: none;
+}
+nav p
+{
+	text-align: center;
+}
+nav h2
+{
+	color: #B3FF6B;
+}
+/* Mise en forme des liens*/
+nav ol li a  /*Liens du menu latéral*/
+{
+	border: 1px solid gray;
+	background-color: #111;
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding-top: 16px;
+	margin-right: 40px;
+	box-shadow: 8px 8px 3px black;
+}
+nav ol li a:visited
+{
+	color: #FF9696;
+}
+nav ol li a:hover
+{
+	background-color: #5E5E5E;
+	color: #CCDC9B;
+}
+#current_page /*Appliqué au lien de la page active (pour changer la couleur de fond)*/
+{
+	background-color: #407310;
+}
+/*
+	Mise en forme des listes pages dates et chiffres
+*/
+.dates_chiffres ol {counter-reset: nombre;} /*reset du compteur */
+.dates_chiffres li {
+	list-style-type: none; /*On enlève les puces de la liste*/
+	counter-increment: nombre; /*On incrémente le compteur*/
+	margin-bottom: 10px;
+}
+.dates_chiffres li:before {
+	padding: 0 20px 6px;
+	content: counter(nombre); /*On affiche le compteur*/
+	margin-right: 8px;
+	vertical-align: top;
+	background: #668;
+	border-radius: 60px;
+	color: aqua;
+	box-shadow: 6px 6px 3px orange; /*Application de l'ombre*/
+}
+.chiffre /*Représente les chiffres (début de ligne) de la page date et chiffres*/
+{
+	color: maroon;
+	text-shadow: 2px 2px 1px orange;
+	font-size: 1.1em;
+}
